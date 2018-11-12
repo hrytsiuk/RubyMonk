@@ -13,6 +13,7 @@ RSpec.describe 'find frequency' do
 
   context 'sentence does not contains the same words' do
     let(:word) { 'Ruby' }
+    
     it 'returns 0' do
       expect(find_frequency(sentence, word)).to eq(0)
     end
