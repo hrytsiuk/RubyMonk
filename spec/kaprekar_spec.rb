@@ -8,7 +8,7 @@ RSpec.describe 'kaprekar?' do
         let(:k) { 9 }
 
         it 'returns true' do
-          expect(kaprekar?(k)).to eq true
+          expect(kaprekar?(k)).to be true
         end
       end
 
@@ -16,7 +16,7 @@ RSpec.describe 'kaprekar?' do
         let(:k) { 10 }
 
         it 'returns false' do
-          expect(kaprekar?(k)).to eq false
+          expect(kaprekar?(k)).to be false
         end
       end
     end
