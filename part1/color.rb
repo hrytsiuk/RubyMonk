@@ -1,5 +1,3 @@
-require 'pry'
-
 class Color
   R_COEF = 299
   G_COEF = 587

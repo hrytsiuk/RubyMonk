@@ -5,10 +5,10 @@ RSpec.describe Color do
 
   let(:rgb_color) { described_class.new(r: 13, g: 21, b: 34) }
   let(:another_color) { described_class.new(r: 55, g: 89, b: 144) }
-  index = 20
+  let(:index) { 20 }
 
   describe '#brightness_index' do
-    it "returns index equal #{index}" do
+    it "returns index" do
       expect(rgb_color.brightness_index).to eq(index)
     end
   end
