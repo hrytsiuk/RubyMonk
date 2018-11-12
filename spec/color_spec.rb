@@ -3,8 +3,8 @@ require 'pry'
 
 RSpec.describe Color do
 
-  let(:rgb_color) { described_class.new(13, 21, 34) }
-  let(:another_color) { described_class.new(55, 89, 144) }
+  let(:rgb_color) { described_class.new(r: 13, g: 21, b: 34) }
+  let(:another_color) { described_class.new(r: 55, g: 89, b: 144) }
   index = 20
 
   describe '#brightness_index' do
@@ -37,8 +37,8 @@ RSpec.describe Color do
 
   describe '#enough_contrast?' do
     context 'is enough contrast' do
-    let(:rgb_color) { described_class.new(42, 42, 42) }
-    let(:another_color) { described_class.new(210, 210, 210) }
+    let(:rgb_color) { described_class.new(r: 42, g: 42, b: 42) }
+    let(:another_color) { described_class.new(r: 210, g: 210, b: 210) }
 
       it 'return true' do
         expect(rgb_color.enough_contrast?(another_color)).to eq(true)
