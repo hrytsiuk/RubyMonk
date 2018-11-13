@@ -26,6 +26,7 @@ class Color
   end
 
   def enough_contrast?(another)
-    brightness_difference(another) > BRINGHTNESS_DIFFERENCE && hue_difference(another) > HUE_DIFFERENCE
+    brightness_difference(another) > BRINGHTNESS_DIFFERENCE \
+      && hue_difference(another) > HUE_DIFFERENCE
   end
 end
